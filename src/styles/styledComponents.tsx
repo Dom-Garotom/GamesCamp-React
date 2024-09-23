@@ -24,3 +24,15 @@ export const ButtonDefault = styled.button`
         transition: all 200ms;
     }
 `
+
+export const ButtonCTA = styled(ButtonDefault)`
+    color: #fff;
+    background-color:  #000;
+
+
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        transition: all 200ms;
+    }
+`
