@@ -5,15 +5,14 @@ import ImageBackGround from "../../assets/BackGround.png"
 const WrapperHero = styled.section`
     background-image: url(${ImageBackGround});
     background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
+
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 100vw;
+    width: 99vw;
     min-block-size: 100vh;
     text-align: center;
 
