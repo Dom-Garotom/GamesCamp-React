@@ -1,4 +1,4 @@
-import { TitleDefault , MainTitle , ButtonDefault , ButtonCTA , ButtonExit , Negrito} from "../styles/styledComponents"
+import { TitleDefault , MainTitle , ButtonDefault , ButtonCTA , ButtonExit , Negrito, InputDefault} from "../styles/styledComponents"
 import TitleWithHat from "../components/TitleWithHat"
 
 export default function Home() {
@@ -14,6 +14,7 @@ export default function Home() {
         O evento será <b>realizado na prestigiosa Farmasi Arena</b>, localizada no coração do bairro da Barra da Tijuca, no Rio de Janeiro. <Negrito>A arena está situada na Avenida Embaixador Abelardo Bueno</Negrito>, número 3401, um ponto de fácil acesso e reconhecido por receber grandes eventos e shows de renome.
       </p>
       <a href="">teste</a>
+      <InputDefault placeholder="Teste"/>
     </>
   )
 }
