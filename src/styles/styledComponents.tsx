@@ -8,7 +8,7 @@ export const TitleDefault = styled.h2`
 
 export const MainTitle = styled.h1`
     font-size: 4.25rem;
-    color: aliceblue;
+    color: #fff;
 `
 
 
