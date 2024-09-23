@@ -23,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         color: #B9B6B6;
         font-size: 1.2rem;
+        line-height: 26px;
     }
 
     b{
@@ -41,6 +42,11 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 600;
     }
 
+    img{
+        max-width: 500px;
+        width: 100%;
+        border-radius: 8px;
+    }
 `;
 
 export default GlobalStyles;
