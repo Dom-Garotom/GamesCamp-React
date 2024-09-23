@@ -1,10 +1,9 @@
-import Main from "../components/main"
+import { TitleDefault } from "../styles/styledComponents"
+
 export default function Home() {
   return (
     <>
-      <Main>
-        
-      </Main>
+      <TitleDefault>Teste</TitleDefault>
     </>
   )
 }
