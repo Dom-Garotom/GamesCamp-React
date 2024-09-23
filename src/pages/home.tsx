@@ -2,6 +2,7 @@ import HeroSection from "../components/heroSection";
 import SectionDefault from "../components/sectionDefault";
 import { Negrito, TitleDefault, ButtonDefault} from "../styles/styledComponents";
 import TitleWithHat from "../components/TitleWithHat";
+import SectionCTA from "../components/sectionCTA";
 
 import ImageValorantTeam from "../assets/images-event/valorant-team.jpg"
 import ImageTrofeu from "../assets/images-event/trofeu.jpg"
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <>
       <HeroSection/>
-      
+
       <SectionDefault 
         rigth
         src={ImageFallen}
@@ -68,7 +69,9 @@ export default function Home() {
         </p>
       </SectionDefault>
 
-      
+      <SectionCTA
+        content="Quer participar da GamesCamp 2024?"
+      />
     </>
   )
 }
