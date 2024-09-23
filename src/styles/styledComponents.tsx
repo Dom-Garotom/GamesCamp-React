@@ -36,3 +36,8 @@ export const ButtonCTA = styled(ButtonDefault)`
         transition: all 200ms;
     }
 `
+
+export const ButtonExit = styled(ButtonCTA)`
+    width: 50px;
+    height: 50px;
+`

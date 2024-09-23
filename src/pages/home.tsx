@@ -1,4 +1,4 @@
-import { TitleDefault , ButtonDefault , ButtonCTA} from "../styles/styledComponents"
+import { TitleDefault , ButtonDefault , ButtonCTA , ButtonExit} from "../styles/styledComponents"
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <TitleDefault>Teste</TitleDefault>
       <ButtonDefault>Inscreva-se</ButtonDefault>
       <ButtonCTA>Preencher o formulario</ButtonCTA>
+      <ButtonExit>X</ButtonExit>
     </>
   )
 }
