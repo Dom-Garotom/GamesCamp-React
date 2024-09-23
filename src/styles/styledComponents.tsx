@@ -35,6 +35,7 @@ export const ButtonDefault = styled.button`
 export const ButtonCTA = styled(ButtonDefault)`
     color: #fff;
     background-color:  #000;
+    height: 60px;
 
 
     &:hover{
