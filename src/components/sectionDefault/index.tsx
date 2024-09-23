@@ -28,7 +28,7 @@ const WrapperSection = styled.section<WrapperSectionProps>`
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     text-align: left;
 
     div{

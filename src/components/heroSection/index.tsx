@@ -15,6 +15,7 @@ const WrapperHero = styled.section`
     width: 99vw;
     min-block-size: 100vh;
     text-align: center;
+    margin-bottom: 50px;
 
     p{
         font-size: 20px;
