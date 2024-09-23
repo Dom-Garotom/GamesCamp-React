@@ -30,6 +30,17 @@ const Wrapper = styled.div`
     flex-direction: column;
     gap: 40px;
     text-align: left;
+
+    div{
+        display: flex;
+        gap: 40px;
+
+        b{
+            font-size: 20px;
+            width: 150px;
+        }
+    }
+
 `
 
 
