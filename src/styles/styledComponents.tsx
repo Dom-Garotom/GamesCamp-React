@@ -48,3 +48,8 @@ export const ButtonExit = styled(ButtonCTA)`
     width: 50px;
     height: 50px;
 `
+
+export const Negrito = styled.b`
+    color: #FFEB08;
+`
+
