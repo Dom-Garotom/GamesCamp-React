@@ -51,21 +51,18 @@ export const ButtonExit = styled(ButtonCTA)`
 `
 
 export const InputDefault = styled.input`
-    max-width: 400px;
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 15px 0px;
+    padding-left: 10px;
     outline: none;
     font-weight: 600;
     font-size: 1.2rem;
+    color: #6a6a6a;
     background-color: transparent;
-    border: 1px solid #000110;
 
     &::placeholder{
         font-weight: 600;
         font-size: 1.2rem;
-        color: #B9B6B6;
+        color: #6a6a6a;
     }
 
 `
