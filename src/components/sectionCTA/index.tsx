@@ -1,5 +1,7 @@
 import styled from "styled-components"
+import ModalForms from "../modalForm";
 import { TitleDefault , ButtonCTA } from "../../styles/styledComponents"
+import { useState } from "react";
 
 type PropsSectionCTA= {
     content : string;
@@ -28,10 +30,24 @@ const WrapperSection = styled.section`
 
 
 export default function SectionCTA({ content } : PropsSectionCTA) {
+  const [IsOpen , setIsOpen] = useState(false);
+
+  const showModal = () => {
+    setIsOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsOpen(false);
+  }
+
+  
+
   return (
     <WrapperSection>
         <TitleDefault>{content}</TitleDefault>
-        <ButtonCTA>Preencher o formulario</ButtonCTA>
+        <ButtonCTA onClick={showModal}>Preencher o formulario</ButtonCTA>
+
+        <ModalForms isOpen={IsOpen} closeModal={closeModal}/>
     </WrapperSection>
   )
 }
