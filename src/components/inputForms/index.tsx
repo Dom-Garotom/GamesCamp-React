@@ -12,19 +12,28 @@ const WrapperInput = styled.div`
     margin: 15px 0px;
     background-color: transparent;
     border: 1px solid #000110;
+
+    svg{
+      width: 25px;
+      height: 25px;
+    }
 `
 
 type PropsInputForms = {
     key ?: number;
     placeHolder : string;
     children : React.ReactNode;
+    type ?: string;
+    name ?: string;
+    id ?: string;
+    required ?: boolean;
 }
 
-export default function InputForms({ key , placeHolder , children } : PropsInputForms) {
+export default function InputForms({ key , placeHolder , children , type , name , required , id} : PropsInputForms) {
   return (
     <WrapperInput key={key} >
         {children}
-        <InputDefault placeholder={placeHolder} />
+        <InputDefault placeholder={placeHolder} id={id} type={type} name={name} required={required} />
     </WrapperInput>
   )
 }
