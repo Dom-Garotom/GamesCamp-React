@@ -16,6 +16,7 @@ const WrapperHero = styled.section`
     min-block-size: 100vh;
     text-align: center;
     margin-bottom: 50px;
+    padding: 0px 20px;
 
     p{
         font-size: 20px;
@@ -24,14 +25,35 @@ const WrapperHero = styled.section`
         color: #fff;
     }
 
+    @media screen and (max-width: 400px){
+        h1{
+            font-size: 3.4rem;
+        }
+    }
+
 `
 
 const Wrapper = styled.div`
     display: flex;
     gap: 40px;
-
+    
+    
     b{
         font-size: 20px;
+        max-width: 150px;
+        text-align: center;
+    }
+    
+    
+    
+    @media screen and (max-width: 400px){
+        justify-content: center;
+        flex-wrap: wrap;
+
+        b{
+            max-width: 250px;
+            text-align: center;
+        }
     }
 `
 
