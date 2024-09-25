@@ -47,6 +47,13 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         border-radius: 8px;
     }
+
+
+    @media screen and (max-width: 500px) {
+        :root{
+            font-size: 13px;
+        }
+    }
 `;
 
 export default GlobalStyles;

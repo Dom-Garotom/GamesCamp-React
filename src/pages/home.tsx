@@ -3,6 +3,8 @@ import SectionDefault from "../components/sectionDefault";
 import { Negrito, TitleDefault, ButtonDefault} from "../styles/styledComponents";
 import TitleWithHat from "../components/TitleWithHat";
 import SectionCTA from "../components/sectionCTA";
+import SponsorSection from "../components/sponsorSection";
+import FooterSection from "../components/footerSection";
 
 import ImageValorantTeam from "../assets/images-event/valorant-team.jpg"
 import ImageTrofeu from "../assets/images-event/trofeu.jpg"
@@ -72,6 +74,10 @@ export default function Home() {
       <SectionCTA
         content="Quer participar da GamesCamp 2024?"
       />
+
+      <SponsorSection/>
+
+      <FooterSection/>
     </>
   )
 }
