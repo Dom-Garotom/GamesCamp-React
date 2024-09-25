@@ -5,6 +5,7 @@ import TitleWithHat from "../components/TitleWithHat";
 import SectionCTA from "../components/sectionCTA";
 import SponsorSection from "../components/sponsorSection";
 import FooterSection from "../components/footerSection";
+import ModalitySection from "../components/modalitySection";
 
 import ImageValorantTeam from "../assets/images-event/valorant-team.jpg"
 import ImageTrofeu from "../assets/images-event/trofeu.jpg"
@@ -54,6 +55,8 @@ export default function Home() {
           Não perca essa oportunidade única de participar de um evento que promete ser um marco no calendário de 2024. Marque na sua agenda e venha se juntar a nós na Farmasi Arena!
         </p>
       </SectionDefault>
+
+      <ModalitySection/>
 
       <SectionDefault 
         rigth
