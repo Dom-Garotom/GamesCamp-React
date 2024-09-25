@@ -3,6 +3,8 @@ import { TitleDefault } from "../../styles/styledComponents";
 
 
 const WrapperTitle = styled.div`
+    max-width: 500px;
+    width: 100%;
     margin: 18px 0px;
     position: relative;
     span{
