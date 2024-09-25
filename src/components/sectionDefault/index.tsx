@@ -23,6 +23,13 @@ const WrapperSection = styled.section<WrapperSectionProps>`
     padding: 0px 50px;
     margin: 20px 0px;
     text-align: center;
+
+
+    @media screen and ( max-width: 1000px) {
+        padding: 20px;
+        flex-direction: column;
+    }
+
 `
 
 const Wrapper = styled.div`
@@ -31,13 +38,23 @@ const Wrapper = styled.div`
     gap: 30px;
     text-align: left;
 
+
     div{
         display: flex;
-        gap: 40px;
+        gap: 10px;
+        flex-wrap: wrap;
 
         b{
             font-size: 20px;
-            width: 150px;
+            max-width: 150px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 400px){
+            b{
+                max-width: 250px;
+                text-align: left;
+            }
         }
     }
 
