@@ -17,13 +17,20 @@ const WrapperSection = styled.section`
     width: 99vw;
     min-block-size: 50vh;
     gap: 50px;
-    padding: 0px 50px;
+    padding: 0px 20px;
     margin: 20px 0px;
     text-align: center;
 
     h2{
-        font-size: 3.5rem;
-        text-align: center;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+
+    @media screen and (max-width: 400px){
+      h2{
+        font-size: 2.7rem;
+      }
     }
 `
 
