@@ -2,7 +2,6 @@ import styled from "styled-components"
 import {  ButtonExit } from "../../styles/styledComponents"
 import FormDialog from "../formDialog"
 import { useEffect, useRef } from "react"
-import {  useNavigate } from "react-router"
 
 
 const WrapperDialog = styled.dialog`
@@ -42,7 +41,6 @@ type PropsModalForms = {
 
 export default function ModalForms( { isOpen , closeModal } : PropsModalForms) {
     const modalRef = useRef<HTMLDialogElement>(null);
-    const navigate = useNavigate();
 
     
     const abrirModal = () =>{
@@ -64,10 +62,6 @@ export default function ModalForms( { isOpen , closeModal } : PropsModalForms) {
             abrirModal();
         } else{
             fecharModal();
-        }
-
-        return () =>{
-            navigate('/inscrição');
         }
 
     }, [isOpen] )

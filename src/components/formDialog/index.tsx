@@ -7,6 +7,7 @@ import { IoPerson} from "react-icons/io5";
 import { HiOutlineMail } from "react-icons/hi";
 import { LuCodepen } from "react-icons/lu";
 import { ButtonCTA } from '../../styles/styledComponents';
+import { useNavigate } from 'react-router';
 
 
 const WrapperForm = styled.form`
@@ -22,12 +23,17 @@ const WrapperForm = styled.form`
 `
 
 type prop = {
-    closeModal ?: () => void;
+    closeModal ?: () => void ;
 }
 
 export default function FormDialog( {closeModal} : prop ) {
+    const navigate = useNavigate();
+
+
     const handleSubmit = ( e : React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault();
+        closeModal?.();
+        navigate('/inscrição');
     }
 
   return (
@@ -48,7 +54,7 @@ export default function FormDialog( {closeModal} : prop ) {
             <p>Concordo com os <a href="">Termos</a> e <a href="">Políticas de privacidade</a></p>
         </InputCheckBox>
 
-        <ButtonCTA type='submit' onClick={closeModal} >Garantir Inscrição</ButtonCTA>    
+        <ButtonCTA type='submit' >Garantir Inscrição</ButtonCTA>    
     </WrapperForm>
   )
 }
