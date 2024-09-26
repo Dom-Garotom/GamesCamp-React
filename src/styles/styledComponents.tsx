@@ -11,8 +11,13 @@ export const MainTitle = styled.h1`
     color: #fff;
 `
 
+type ButtonProps = {
+    secondary?: boolean;
+    lock?: boolean;
+  };
+  
 
-export const ButtonDefault = styled.button`
+export const ButtonDefault = styled.button<ButtonProps>`
     width: 250px;
     height: 48px;
     padding: 10px;
@@ -20,13 +25,14 @@ export const ButtonDefault = styled.button`
     font-weight: 700;
     font-size: 1.2rem;
     color: #000;
-    background-color: #fff;
+    background-color: ${(props) => ( props.secondary ? "#29E0A9 ": "#fff")};
+    opacity: ${(props) => (props.lock ? 0.40 : 1)};
     transition: all 200ms;
-    cursor: pointer;
+    cursor: ${(props) => (props.lock ? "no-drop" : "pointer")};
 
 
     &:hover{
-        background-color: #343546;
+        background-color: ${(props) => ( props.secondary ? "#19795c ": "#343546")};
         color: #fff;
         transition: all 200ms;
     }
