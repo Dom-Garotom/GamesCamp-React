@@ -6,12 +6,25 @@ import SectionCTA from "../components/sectionCTA";
 import SponsorSection from "../components/sponsorSection";
 import FooterSection from "../components/footerSection";
 import ModalitySection from "../components/modalitySection";
+import ModalForms from "../components/modalForm";
+import { useState } from "react";
 
 import ImageValorantTeam from "../assets/images-event/valorant-team.jpg"
 import ImageTrofeu from "../assets/images-event/trofeu.jpg"
 import ImageFallen from "../assets/images-event/fallen-imperial.jpg"
 
 export default function Home() {
+  const [IsOpen , setIsOpen] = useState(false);
+
+  const showModal = () => {
+    setIsOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsOpen(false);
+  }
+
+
   return (
     <>
       <HeroSection/>
@@ -37,7 +50,8 @@ export default function Home() {
           <Negrito>32 equipes se enfrentando</Negrito>
         </div>
 
-        <ButtonDefault>Inscrever-se</ButtonDefault>
+        <ButtonDefault onClick={()  => showModal()}>Inscrever-se</ButtonDefault>
+
 
 
       </SectionDefault>
@@ -78,6 +92,8 @@ export default function Home() {
         content="Quer participar da GamesCamp 2024?"
       />
 
+      <ModalForms isOpen={IsOpen} closeModal={closeModal}/>
+      
       <SponsorSection/>
 
       <FooterSection/>
