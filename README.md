@@ -8,7 +8,7 @@ Esse projeto mesmo simples foi um grande aprendizado sobre styled componets como
 
 ## Tecnologias Utilizadas
 REACT : Para criação dos componentes e estrutura do site.   
-TYPESCRIPT : Ultilizado como linguagem padrão e para adicionar interatividade à aplicação e gerenciar as ações do evento.   
+TYPESCRIPT : Ultilizado para adicionar interatividade à aplicação e gerenciar as ações do evento.   
 STYLED COMPONENTS : Ultilizado para estilizar os componentes e escopar o css.   
 REACT ROUTER DOM : Ultilizado para fazer as rotas e ligações das páginas.   
 NOTION : Para organização das taks a serem feitas e evelução do projeto.   
