@@ -31,6 +31,7 @@ import valorantTeam02 from "../assets/images-event/valorant-team-02.jpeg";
 import valorantTeam03 from "../assets/images-event/valorant-team-03.jpeg";
 import valorantTeam from "../assets/images-event/valorant-team.jpg";
 import winners from "../assets/images-event/winners.jpeg";
+import ButtonTop from "../components/buttonTop";
 
 export default function Home() {
   const [IsOpen , setIsOpen] = useState(false);
@@ -182,9 +183,10 @@ export default function Home() {
         content="Quer participar da GamesCamp 2024?"
       />
 
-      <ModalForms isOpen={IsOpen} closeModal={closeModal}/>
-      
       <SponsorSection/>
+      <ButtonTop/>
+      
+      <ModalForms isOpen={IsOpen} closeModal={closeModal}/>
 
       <FooterSection/>
     </>

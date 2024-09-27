@@ -6,6 +6,7 @@ import backGround from "../assets/background-steps.jpg"
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import Toast from '../components/toast'
+import ButtonTop from '../components/buttonTop'
 
 
 const Wrapper = styled.main`
@@ -109,6 +110,9 @@ export default function Inscricao() {
           />
 
         </WrapperStep>
+
+      <ButtonTop/>
+
 
 
       </Wrapper>
