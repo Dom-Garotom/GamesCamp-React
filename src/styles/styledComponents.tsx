@@ -14,6 +14,7 @@ export const MainTitle = styled.h1`
 type ButtonProps = {
     secondary?: boolean;
     lock?: boolean;
+    block ?: boolean
   };
   
 
@@ -54,6 +55,21 @@ export const ButtonCTA = styled(ButtonDefault)`
 export const ButtonExit = styled(ButtonCTA)`
     width: 50px;
     height: 50px;
+`
+
+export const ButtontoTop = styled(ButtonCTA)`
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+
+    width: 50px;
+    height: 50px;
+    background-color: #1a1822;
+
+    pointer-events: ${(props) => (props.block ? 'auto' : 'none')};
+    opacity: ${(props) => (props.block ? '1' : '0')};
+    transform: ${(props) => (props.block ? 'translateY(0)' : 'translateY(1rem)')};
+    transition: opacity 0.20s ease, transform 0.60s ease;
 `
 
 export const InputDefault = styled.input`
