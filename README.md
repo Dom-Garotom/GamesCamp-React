@@ -1,4 +1,4 @@
-<img src="assets/images-event/Imagem-Ilustrativa.png" alt="Imagem ilustrativa do evento" width="100%"/>
+<img src="src/assets/images-event/imagem-Ilustrativa.png" alt="Imagem ilustrativa do evento" width="100%"/>
 
 
 # GamesCamp - Desafio Nadic
