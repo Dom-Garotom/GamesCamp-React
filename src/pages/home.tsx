@@ -12,6 +12,25 @@ import { useState } from "react";
 import ImageValorantTeam from "../assets/images-event/valorant-team.jpg"
 import ImageTrofeu from "../assets/images-event/trofeu.jpg"
 import ImageFallen from "../assets/images-event/fallen-imperial.jpg"
+import Carroulsel from "../components/carroseul";
+
+
+import enkay from "../assets/images-event/EnKay.jpg";
+import valorantCloud9 from "../assets/images-event/Valorant_Cloud9.jpg";
+import furiaVct from "../assets/images-event/furia-vct.jpg";
+import ksceratoFuria from "../assets/images-event/kscerato-furia.webp";
+import loser from "../assets/images-event/loser.jpeg";
+import simpleRage from "../assets/images-event/simple-rage.jpeg";
+import valorantIglNrg from "../assets/images-event/valorant-igl-nrg.jpeg";
+import valorantLeviatan from "../assets/images-event/valorant-leviatan.jpeg";
+import valorantLoudTeam from "../assets/images-event/valorant-loud-team.jpeg";
+import valorantLoud from "../assets/images-event/valorant-loud.jpeg";
+import valorantMrg from "../assets/images-event/valorant-mrg.webp";
+import valorantPersonMrg from "../assets/images-event/valorant-person-mrg.jpeg";
+import valorantTeam02 from "../assets/images-event/valorant-team-02.jpeg";
+import valorantTeam03 from "../assets/images-event/valorant-team-03.jpeg";
+import valorantTeam from "../assets/images-event/valorant-team.jpg";
+import winners from "../assets/images-event/winners.jpeg";
 
 export default function Home() {
   const [IsOpen , setIsOpen] = useState(false);
@@ -23,6 +42,73 @@ export default function Home() {
   const closeModal = () => {
     setIsOpen(false);
   }
+
+  const imagensCarroseul = [
+    {
+        src: enkay,
+        alt: "EnKay",
+    },
+    {
+        src: valorantCloud9,
+        alt: "Valorant Cloud9",
+    },
+    {
+        src: furiaVct,
+        alt: "Furia VCT",
+    },
+    {
+        src: ksceratoFuria,
+        alt: "Kscerato Furia",
+    },
+    {
+        src: loser,
+        alt: "Loser",
+    },
+    {
+        src: simpleRage,
+        alt: "Simple Rage",
+    },
+    {
+        src: valorantIglNrg,
+        alt: "Valorant IGL NRG",
+    },
+    {
+        src: valorantLeviatan,
+        alt: "Valorant Leviatan",
+    },
+    {
+        src: valorantLoudTeam,
+        alt: "Valorant Loud Team",
+    },
+    {
+        src: valorantLoud,
+        alt: "Valorant Loud",
+    },
+    {
+        src: valorantMrg,
+        alt: "Valorant MRG",
+    },
+    {
+        src: valorantPersonMrg,
+        alt: "Valorant Person MRG",
+    },
+    {
+        src: valorantTeam02,
+        alt: "Valorant Team 02",
+    },
+    {
+        src: valorantTeam03,
+        alt: "Valorant Team 03",
+    },
+    {
+        src: valorantTeam,
+        alt: "Valorant Team",
+    },
+    {
+        src: winners,
+        alt: "Winners",
+    },
+];
 
 
   return (
@@ -55,6 +141,10 @@ export default function Home() {
 
 
       </SectionDefault>
+
+      <Carroulsel
+        array={imagensCarroseul}
+      />
 
       <SectionDefault 
         src={ImageValorantTeam}
