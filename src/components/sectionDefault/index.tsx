@@ -1,5 +1,7 @@
 import styled from "styled-components"
-import React from "react"
+import React, { useRef } from "react"
+
+import { motion , useInView } from "framer-motion"
 
 type WrapperSectionProps = {
     direction?: boolean;
@@ -8,15 +10,15 @@ type WrapperSectionProps = {
 type PropsSectionDefault = {
     src: string;
     alt: string;
-    children: React.ReactNode; 
-    rigth ?: true;
+    children: React.ReactNode;
+    rigth?: true;
 }
 
-const WrapperSection = styled.section<WrapperSectionProps>`
+const WrapperSection = styled(motion.section) <WrapperSectionProps>`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: ${ ( props ) => props.direction ? "row" : "row-reverse"};
+    flex-direction: ${(props) => props.direction ? "row" : "row-reverse"};
     width: 99vw;
     min-block-size: 70vh;
     gap: 50px;
@@ -32,7 +34,7 @@ const WrapperSection = styled.section<WrapperSectionProps>`
 
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -61,17 +63,37 @@ const Wrapper = styled.div`
 `
 
 
-export default function SectionDefault({ src , alt, children , rigth } : PropsSectionDefault) {
-  return (
-    <WrapperSection direction={rigth} >
-        <Wrapper >
-            {children}
-        </Wrapper>
+export default function SectionDefault({ src, alt, children, rigth }: PropsSectionDefault) {
+    const animationImage = rigth ? { initial: { opacity: 0, x: 150 }, animate: { opacity: 1, x: 0 } } : { initial: { opacity: 0, x: -150 }, animate: { opacity: 1, x: 0 } };
+    const animationContainer = rigth ? { initial: { opacity: 0, x: -150 }, animate: { opacity: 1, x: 0 } } : { initial: { opacity: 0, x: 150 }, animate: { opacity: 1, x: 0 } };
+    
+    const refSection = useRef(null);
+    const isView = useInView(refSection , {once: true})
 
-        <Wrapper>
-            <img src={src} alt={alt} />
-        </Wrapper>
 
-    </WrapperSection>
-  )
+    return (
+        <WrapperSection
+            ref={refSection}
+            direction={rigth}
+        >
+            <Wrapper
+                initial={animationContainer.initial}
+                animate={isView ? animationContainer.animate : {}}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+
+            >
+                {children}
+            </Wrapper>
+
+            <Wrapper
+                initial={animationImage.initial}
+                animate={ isView ? animationImage.animate : {}}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+
+            >
+                <img src={src} alt={alt} />
+            </Wrapper>
+
+        </WrapperSection>
+    )
 }
