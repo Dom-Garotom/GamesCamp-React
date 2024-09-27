@@ -26,13 +26,13 @@ const WrapperCarrousel = styled.section`
     max-width: 50px;
   }
 
-  button:nth-cHild(1){
+  button:nth-child(1){
     position: absolute;
     left: 20px;
 
   }
 
-  button:nth-cHild(3){
+  button:nth-child(3){
     position: absolute;
     right: 20px;
 
@@ -40,13 +40,13 @@ const WrapperCarrousel = styled.section`
 
 
   @media screen and (max-width:550px) {
-      button:nth-cHild(1){
+      button:nth-child(1){
       position: absolute;
       left: 10px;
 
     }
 
-    button:nth-cHild(3){
+    button:nth-child(3){
       position: absolute;
       right: 10px;
 
@@ -118,7 +118,7 @@ export default function Carroulsel( { array } : PropsCarrousel) {
         }
     }
 
-    const [isScroll , setIsScroll] = useState(true);
+    const [isScroll] = useState(true);
 
 
     useEffect(()=>{
@@ -137,7 +137,6 @@ export default function Carroulsel( { array } : PropsCarrousel) {
         })
 
     }, [isScroll])
-
 
 
     return (
