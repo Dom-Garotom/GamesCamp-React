@@ -1,6 +1,6 @@
 <img src="./src/assets/Imagem-Ilustrativa.png" alt="Imagem ilustrativa do evento" width="100%"/>
     
-<img src="./src/assets/imagem-Ilustrativa-02.png" alt="Imagem ilustrativa do evento" width="100%"/>   
+<img src="./src/assets/Imagem-Ilustrativa-02.png" alt="Imagem ilustrativa do evento" width="100%"/>   
 
 # GamesCamp - Desafio Nadic
 Este projeto foi desenvolvido como parte do desafio da trilha do Nadic, utilizando React, StyledComponents e typesScript para criar uma interface visual e interativa de um evento fictício. O objetivo deste desafio é simular o desenvolvimento de uma aplicação visual para a gestão de eventos, aplicando conceitos de frontend.   
