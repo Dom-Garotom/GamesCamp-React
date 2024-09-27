@@ -2,8 +2,8 @@
 
 
 # GamesCamp - Desafio Nadic
-Este projeto foi desenvolvido como parte do desafio da trilha do Nadic, utilizando React, StyledComponents e typesScript para criar uma interface visual e interativa de um evento fictício. O objetivo deste desafio é simular o desenvolvimento de uma aplicação visual para a gestão de eventos, aplicando conceitos de frontend.
-Nessa segunda parte do desafio foi adicionado a mais uma página de confirmação de inscrição em relação ao projeto inicial como também melhorias na responsividade e no design system dos componentes do projeto.
+Este projeto foi desenvolvido como parte do desafio da trilha do Nadic, utilizando React, StyledComponents e typesScript para criar uma interface visual e interativa de um evento fictício. O objetivo deste desafio é simular o desenvolvimento de uma aplicação visual para a gestão de eventos, aplicando conceitos de frontend.   
+Nessa segunda parte do desafio foi adicionado a mais uma página de confirmação de inscrição em relação ao projeto inicial como também melhorias na responsividade e no design system dos componentes do projeto.   
 Esse projeto mesmo simples foi um grande aprendizado sobre styled componets como também a criação de um design system proprio, me ajudando a aumentar minha experiência como programador e que venha o prôximo desáfio.
 
 ## Tecnologias Utilizadas
@@ -27,7 +27,7 @@ Navegue até o diretório do projeto:
 cd gamesCamp
 ```
 
-Execute o projeto em localHodt:
+Execute o projeto em localHost:
 
 ```bash
 npm run dev
