@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React, { useRef } from "react"
 
-import { motion , useInView } from "framer-motion"
+import { motion } from "framer-motion"
 
 type WrapperSectionProps = {
     direction?: boolean;
@@ -64,11 +64,14 @@ const Wrapper = styled(motion.div)`
 
 
 export default function SectionDefault({ src, alt, children, rigth }: PropsSectionDefault) {
-    const animationImage = rigth ? { initial: { opacity: 0, x: 150 }, animate: { opacity: 1, x: 0 } } : { initial: { opacity: 0, x: -150 }, animate: { opacity: 1, x: 0 } };
-    const animationContainer = rigth ? { initial: { opacity: 0, x: -150 }, animate: { opacity: 1, x: 0 } } : { initial: { opacity: 0, x: 150 }, animate: { opacity: 1, x: 0 } };
+    // const animationImage = rigth ? { initial: { opacity: 0, x: 150 }, animate: { opacity: 1, x: 0 } } : { initial: { opacity: 0, x: -150 }, animate: { opacity: 1, x: 0 } };
+    // const animationContainer = rigth ? { initial: { opacity: 0, x: -150 }, animate: { opacity: 1, x: 0 } } : { initial: { opacity: 0, x: 150 }, animate: { opacity: 1, x: 0 } };
     
     const refSection = useRef(null);
-    const isView = useInView(refSection , {once: true})
+    // const isView = useInView(refSection , {once: true})
+    // const viewWidth = window.innerWidth > 600;
+
+
 
 
     return (
@@ -77,18 +80,18 @@ export default function SectionDefault({ src, alt, children, rigth }: PropsSecti
             direction={rigth}
         >
             <Wrapper
-                initial={animationContainer.initial}
-                animate={isView ? animationContainer.animate : {}}
-                transition={{ duration: 1.5, ease: "easeOut" }}
+                // initial={animationContainer.initial}
+                // animate={isView && viewWidth ? animationContainer.animate : {}}
+                // transition={{ duration: 1.5, ease: "easeOut" }}
 
             >
                 {children}
             </Wrapper>
 
             <Wrapper
-                initial={animationImage.initial}
-                animate={ isView ? animationImage.animate : {}}
-                transition={{ duration: 1.5, ease: "easeOut" }}
+                // initial={animationImage.initial}
+                // animate={ isView && viewWidth ? animationImage.animate : {}}
+                // transition={{ duration: 1.5, ease: "easeOut" }}
 
             >
                 <img src={src} alt={alt} />
