@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 
 export default function ButtonTop() {
-  const [isBlock, setIsBlock] = useState(true);
+  const [isBlock, setIsBlock] = useState(false);
 
   const toTop = () => {
     window.scroll({
