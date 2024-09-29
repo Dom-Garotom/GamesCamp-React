@@ -26,6 +26,10 @@ const WrapperSection = styled.section`
       text-align: center;
     }
 
+    button:hover{
+      background-color: #fff;
+    }
+
 
     @media screen and (max-width: 400px){
       h2{

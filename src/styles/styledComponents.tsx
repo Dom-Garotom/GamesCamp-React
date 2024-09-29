@@ -46,7 +46,8 @@ export const ButtonCTA = styled(ButtonDefault)`
 
 
     &:hover{
-        background-color: #fff;
+        background-color: #d2d2d4b8;
+
         color: #000;
         transition: all 200ms;
     }
@@ -65,6 +66,10 @@ export const ButtontoTop = styled(ButtonCTA)`
     width: 50px;
     height: 50px;
     background-color: #1a1822;
+
+    &:hover{
+        background-color: #fff;
+    }
 
     pointer-events: ${(props) => (props.block ? 'auto' : 'none')};
     opacity: ${(props) => (props.block ? '1' : '0')};
